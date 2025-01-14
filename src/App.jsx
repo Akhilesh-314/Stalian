@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter ,Route,Router, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Success from './pages/Success'
-import Error from './pages/error'
+import Error from './pages/Error'
 import ProtectedRoute from './Component/ProtectedRoute'
 import Footer from './Component/Footer'
 
