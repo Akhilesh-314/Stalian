@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav 
-      className="flex flex-col lg:flex-row justify-around mx-10 my-5 pt-5  h-[40vh] bg-center bg-cover " 
+      className="flex flex-col lg:flex-row justify-around lg:mx-10 lg:my-5 pt-5  h-[40vh] bg-center bg-cover " 
       style={{ backgroundImage: "url('https://img.freepik.com/free-vector/flat-twitter-header-template-italian-food-restaurant_23-2150220563.jpg?t=st=1736816637~exp=1736820237~hmac=7a97c2eaa157c326cfac73df89c4756644bbcc216bca42e1fc5fe7578edfed38&w=1380')" }}
     >
       <div className='font-bold'>
