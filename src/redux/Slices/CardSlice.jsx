@@ -26,10 +26,13 @@ const CartSlice=createSlice({
     },
     decrement:(state,action)=>{
       state.cart=state.cart.map((item)=>item.id===action.payload.id ?{...item,qty:item.qty-1}:item)
+    },
+    reset:(state,action)=>{
+      state.cart=action.payload
     }
   }
 }) ;
 
-export const {addToCart,removeFromCart,increment,decrement}=CartSlice.actions;
+export const {addToCart,removeFromCart,increment,decrement,reset}=CartSlice.actions;
 
 export default CartSlice.reducer;
