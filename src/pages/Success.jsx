@@ -11,8 +11,7 @@ const Success = () => {
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
-      setLoading(false),
-      dispatch(reset([]));
+      setLoading(false);
     }, 3000); // Loading spinner will stop after 3 seconds
 
     return () => clearTimeout(loadingTimeout); // Cleanup timeout
@@ -20,7 +19,8 @@ const Success = () => {
 
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      navigate("/"); // Redirect to homepage after 5 seconds
+      navigate("/");
+         dispatch(reset([])); // Redirect to homepage after 5 seconds
     }, 10000);
 
     return () => clearTimeout(redirectTimeout); // Cleanup timeout
