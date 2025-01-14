@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { PropagateLoader } from "react-spinners";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { reset } from "../redux/Slices/CardSlice";
 
 const Success = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
+  const dispatch=useDispatch();
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
-      setLoading(false);
+      setLoading(false),
+      dispatch(reset([]));
     }, 3000); // Loading spinner will stop after 3 seconds
 
     return () => clearTimeout(loadingTimeout); // Cleanup timeout
