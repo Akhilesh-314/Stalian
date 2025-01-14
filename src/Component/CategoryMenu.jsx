@@ -21,7 +21,7 @@ const CategoryMenu = () => {
   return (
     <div className="mx-20 flex items-center flex-col justify-center">
       <h3 className="text-xl font-semibold">Find the best food</h3>
-      <div className="my-6 flex gap-3 overflow-x-auto scroll-smooth whitespace-nowrap">
+      <div className="my-6 flex gap-3 flex-wrap">
         <button
           onClick={() => dispatch(SetCategory("All"))}
           className={`px-3 py-2 bg-green-200 font-bold rounded-lg hover:bg-green-500 hover:text-white ${
